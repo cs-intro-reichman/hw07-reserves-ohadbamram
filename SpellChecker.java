@@ -19,6 +19,8 @@ public class SpellChecker {
 	}
 
 	public static int levenshtein(String word1, String word2) {
+		word1 = word1.toLowerCase();
+		word2 = word2.toLowerCase();  
 		if (word1.length() == 0) return word2.length(); //base case 1
 		if (word2.length() == 0) return word1.length(); //base case 2			
 		if (word1.charAt(0) == word2.charAt(0)) return levenshtein(tail(word1), tail(word2)); //if they have the same head, continue with their tails
@@ -41,7 +43,6 @@ public class SpellChecker {
 	}
 
 	public static String spellChecker(String word, int threshold, String[] dictionary) {
-		word = word.toLowerCase(); 
 		String value = word;//sets the result to the word incase no word in the dictionary is correct within the threshold
 		for(int i = 0; i < dictionary.length; i++){
 			if (levenshtein(word, dictionary[i]) <= threshold) { //checks wether any word word in the dictionary is correct within the threshold
