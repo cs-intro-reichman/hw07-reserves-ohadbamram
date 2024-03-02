@@ -1,0 +1,58 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "HashTagTokenizer",
+            "request": "launch",
+            "mainClass": "HashTagTokenizer",
+            "projectName": "hw07-reserves-ohadbamram_b19df9c7"
+        },
+        {
+            "type": "java",
+            "name": "HashTagTokenizerTester",
+            "request": "launch",
+            "mainClass": "HashTagTokenizerTester",
+            "projectName": "hw07-reserves-ohadbamram_b19df9c7"
+        },
+        {
+            "type": "java",
+            "name": "In",
+            "request": "launch",
+            "mainClass": "In",
+            "projectName": "hw07-reserves-ohadbamram_b19df9c7"
+        },
+        {
+            "type": "java",
+            "name": "LevenshteinTester",
+            "request": "launch",
+            "mainClass": "LevenshteinTester",
+            "projectName": "hw07-reserves-ohadbamram_b19df9c7"
+        },
+        {
+            "type": "java",
+            "name": "SpellChecker",
+            "request": "launch",
+            "mainClass": "SpellChecker",
+            "projectName": "hw07-reserves-ohadbamram_b19df9c7",
+            "args": ["coooool", "4"]
+
+        },
+        {
+            "type": "java",
+            "name": "SpellCheckerTester",
+            "request": "launch",
+            "mainClass": "SpellCheckerTester",
+            "projectName": "hw07-reserves-ohadbamram_b19df9c7"
+        }
+    ]
+}
