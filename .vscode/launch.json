@@ -44,7 +44,7 @@
             "request": "launch",
             "mainClass": "SpellChecker",
             "projectName": "hw07-reserves-ohadbamram_b19df9c7",
-            "args": ["coooool", "4"]
+            "args": ["coooool", "3"]
 
         },
         {

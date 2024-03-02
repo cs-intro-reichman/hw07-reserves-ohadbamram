@@ -41,10 +41,13 @@ public class SpellChecker {
 	}
 
 	public static String spellChecker(String word, int threshold, String[] dictionary) {
-		String value = word;
+		String value = word; //sets the result to the word incase no word in the dictionary is correct within the threshold
 		for(int i = 0; i < dictionary.length; i++){
-			if (levenshtein(word, dictionary[i]) <= threshold) {
-				value = dictionary[i];
+			if (levenshtein(word, dictionary[i]) <= threshold) { //checks wether any word word in the dictionary is correct within the threshold
+				if (levenshtein(word, dictionary[i]) == levenshtein(word, value)) { //checks if the new result is minimal
+					continue;
+				}else value = dictionary[i]; // sets the result to that word
+				
 			}
 		}
 		return value;
